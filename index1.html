@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-logo">
+                <img src="img\logo.png" alt="Book Store Logo">
+            </div>
+            <h1>Book Store</h1>
+            <nav>
+                <a href="#" onclick="showTab('shop')">Shop</a>
+                <a href="#" onclick="showTab('orders')">Orders</a>
+                <a href="#contact-section" id="contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="shop" class="shop">
+            <section class="categories">
+                <div class="container">
+                    <button onclick="filterBooks('all')">All</button>
+                    <button onclick="filterBooks('comics')">Comics</button>
+                    <button onclick="filterBooks('novels')">Novels</button>
+                    <button onclick="filterBooks('technology')">Technology</button>
+                    <button onclick="filterBooks('t&t')">Travel & Tourism</button>
+                    <button onclick="filterBooks('ts')">Textbooks & Study Guides</button>                   
+                </div>
+            </section>
+
+            <section class="books">
+                <div class="container">
+                    <div class="book" data-category="comics">
+                        <img src="img/c1.jpg" alt="Comic Book 1">
+                        <h3>Mahabharata</h3>
+                        <p>₹99</p>
+                        <button onclick="addToCart('Mahabharata')">Add to Cart</button>
+                    </div>
+                    <div class="book" data-category="novels">
+                        <img src="img\n1.jpg" alt="Novel Book 1">
+                        <h3>The Girl with Broken Dreams</h3>
+                        <p>₹149</p>
+                        <button onclick="addToCart('The Girl with Broken Dreams')">Add to Cart</button>
+                    </div>
+                    <div class="book" data-category="technology">
+                        <img src="img\t1.jpg" alt="Technology Book 1">
+                        <h3>Nikola Tesla</h3>
+                        <p>₹149</p>
+                        <button onclick="addToCart('Nikola Tesla')">Add to Cart</button>
+                    </div>
+                    <div class="book" data-category="comics">
+                        <img src="img\c2.jpg" alt="Comic Book 1">
+                        <h3>Avengers</h3>
+                        <p>₹199</p>
+                        <button onclick="addToCart('Avengers')">Add to Cart</button>
+                    </div>
+                    <div class="book" data-category="comics">
+                        <img src="img\c3.jpg" alt="Comic Book 1">
+                        <h3>Spiter Man Venom</h3>
+                        <p>₹349</p>
+                        <button onclick="addToCart('Spiter Man Venom')">Add to Cart</button>
+                    </div>
+                    <div class="book" data-category="comics">
+                        <img src="img\c4.jpg" alt="Comic Book 1">
+                        <h3>Avatar</h3>
+                        <p>₹159</p>
+                        <button onclick="addToCart('Avatar')">Add to Cart</button>
+                    </div>
+                    <div class="book" data-category="technology">
+                        <img src="img\t2.jpg" alt="Technology Book 1">
+                        <h3>Futuer Science and Technology</h3>
+                        <p>₹1449</p>
+                        <button onclick="addToCart('Futuer Science and Technology')">Add to Cart</button>
+                    </div>
+                    <div class="book" data-category="novels">
+                        <img src="img\n2.jpg" alt="Novel Book 1">
+                        <h3>The Rogue spy</h3>
+                        <p>₹849</p>
+                        <button onclick="addToCart('The Rogue spy')">Add to Cart</button>
+                    </div>
+                    <div class="book" data-category="novels">
+                        <img src="img\n3.jpg" alt="Novel Book 1">
+                        <h3>The silent patient</h3>
+                        <p>₹199</p>
+                        <button onclick="addToCart('The silent patient')">Add to Cart</button>
+                    </div>
+                    <div class="book" data-category="novels">
+                        <img src="img\n4.jpg" alt="Novel Book 1">
+                        <h3>You Only Live Once</h3>
+                        <p>₹699</p>
+                        <button onclick="addToCart('You Only Live Once')">Add to Cart</button>
+                    </div>
+                    <div class="book" data-category="novels">
+                        <img src="img\n5.jpg" alt="Novel Book 1">
+                        <h3>Iron Flame</h3>
+                        <p>₹699</p>
+                        <button onclick="addToCart('Iron Flame')">Add to Cart</button>
+                    </div>
+                    <div class="book" data-category="novels">
+                        <img src="img\n6.jpg" alt="Novel Book 1">
+                        <h3>That Night</h3>
+                        <p>₹539</p>
+                        <button onclick="addToCart('That Night')">Add to Cart</button>
+                    </div>
+
+                    <div class="book" data-category="comics">
+                        <img src="img\c5.jpg" alt="Comic Book 1">
+                        <h3>Tenali Raman</h3>
+                        <p>₹299</p>
+                        <button onclick="addToCart('Tenali Raman')">Add to Cart</button>
+                    </div>
+                    <div class="book" data-category="comics">
+                        <img src="img\c5.jpg" alt="Comic Book 1">
+                        <h3>Tenali Raman</h3>
+                        <p>₹49</p>
+                        <button onclick="addToCart('Tenali Raman1')">Add to Cart</button>
+                    </div>
+                    <div class="book" data-category="comics">
+                        <img src="img\c7.jpg" alt="Comic Book 1">
+                        <h3>Hanuman</h3>
+                        <p>₹599</p>
+                        <button onclick="addToCart('Hanuman')">Add to Cart</button>
+                    </div>
+
+                    <div class="book" data-category="technology">
+                        <img src="img\t3.jpg" alt="Technology Book 1">
+                        <h3>Technology</h3>
+                        <p>₹999</p>
+                        <button onclick="addToCart('Technology')">Add to Cart</button>
+                    </div>
+                    <div class="book" data-category="novels">
+                        <img src="img\n7.jpg" alt="Novel Book 1">
+                        <h3>Days at the Morisaki Bookshop</h3>
+                        <p>₹999</p>
+                        <button onclick="addToCart('Days at the Morisaki Bookshop')">Add to Cart</button>
+                    </div>
+                    <div class="book" data-category="novels">
+                        <img src="img\n8.jpg" alt="Novel Book 1">
+                        <h3>The Magic of The Lost Temple</h3>
+                        <p>₹899</p>
+                        <button onclick="addToCart('The Magic of The Lost Temple')">Add to Cart</button>
+                    </div>
+                    
+                    <div class="book" data-category="technology">
+                        <img src="img\t4.jpg" alt="Technology Book 1">
+                        <h3>Solar Electicity Handbook</h3>
+                        <p>₹299</p>
+                        <button onclick="addToCart('Solar Electicity Handbook')">Add to Cart</button>
+                    </div>
+                    <div class="book" data-category="technology">
+                        <img src="img/t5.jpg" alt="Technology Book 1">
+                        <h3>Application Development with SAP</h3>
+                        <p>₹669</p>
+                        <button onclick="addToCart('Application Development with SAP')">Add to Cart</button>
+                    </div>
+                    <div class="book" data-category="technology">
+                        <img src="img\t6.jpg" alt="Technology Book 1">
+                        <h3>Science and Technology</h3>
+                        <p>₹299</p>
+                        <button onclick="addToCart('Science and Technology')">Add to Cart</button>
+                    </div>
+                    <div class="book" data-category="comics">
+                        <img src="img\c8.jpg" alt="Comic Book 1">
+                        <h3>Narayana Guru</h3>
+                        <p>₹159</p>
+                        <button onclick="addToCart('Narayana Guru')">Add to Cart</button>
+                    </div>
+                    <div class="book" data-category="comics">
+                        <img src="img\c9.jpg" alt="Comic Book 1">
+                        <h3>Tom and Jerry</h3>
+                        <p>₹159</p>
+                        <button onclick="addToCart('Tom and Jerry')">Add to Cart</button>
+                    </div>
+                    <div class="book" data-category="comics">
+                        <img src="img\c10.jpg" alt="Comic Book 1">
+                        <h3>Everything Archie</h3>
+                        <p>₹129</p>
+                        <button onclick="addToCart('Everything Archie')">Add to Cart</button>
+                    </div>
+                    <div class="book" data-category="technology">
+                        <img src="img\t7.jpg" alt="Technology Book 1">
+                        <h3>Science and Technology</h3>
+                        <p>₹599</p>
+                        <button onclick="addToCart('Science and Technology1')">Add to Cart</button>
+                    </div>
+                    <div class="book" data-category="novels">
+                        <img src="img\n9.jpg" alt="Novel Book 1">
+                        <h3>A Man Called OVE</h3>
+                        <p>₹699</p>
+                        <button onclick="addToCart('A Man Called OVE')">Add to Cart</button>
+                    </div>
+                    <div class="book" data-category="novels">
+                        <img src="img\n10.jpg" alt="Novel Book 1">
+                        <h3>You Can</h3>
+                        <p>₹999</p>
+                        <button onclick="addToCart('You Can')">Add to Cart</button>
+                    </div>
+                    <div class="book" data-category="technology">
+                        <img src="img\t8.jpg" alt="Technology Book 1">
+                        <h3>365 Science and Technology Facts</h3>
+                        <p>₹599</p>
+                        <button onclick="addToCart('365 Science and Technology Facts')">Add to Cart</button>
+                    </div>
+                    <div class="book" data-category="technology">
+                        <img src="img\t9.jpg" alt="Technology Book 1">
+                        <h3>production Technology</h3>
+                        <p>₹399</p>
+                        <button onclick="addToCart('production Technology')">Add to Cart</button>
+                    </div>
+
+                    <div class="book" data-category="technology">
+                        <img src="img\t10.jpg" alt="Technology Book 1">
+                        <h3>Medical Laboratory Technology</h3>
+                        <p>₹599</p>
+                        <button onclick="addToCart('Medical Laboratory Technology')">Add to Cart</button>
+                    </div>   
+                    <div class="book" data-category="t&t">
+                        <img src="img/tt1.jpg" alt="Travel & Tourism">
+                        <h3>Fundamental Of Travel & Tourism</h3>
+                        <p>₹300</p>
+                        <button onclick="addToCart('Fundamental Of Travel & Tourism')">Add to Cart</button>
+                    </div>
+                    
+                    <div class="book" data-category="t&t">
+                        <img src="img/tt2.jpg" alt="Travel & Tourism">
+                        <h3>Travel India</h3>
+                        <p>₹199</p>
+                        <button onclick="addToCart('Travel India')">Add to Cart</button>
+                    </div>
+                    
+                    <div class="book" data-category="t&t">
+                        <img src="img/tt3.jpg" alt="Travel & Tourism">
+                        <h3>Tourism</h3>
+                        <p>₹699</p>
+                        <button onclick="addToCart('Tourism')">Add to Cart</button>
+                    </div>
+                    
+                    <div class="book" data-category="t&t">
+                        <img src="img/tt4.webp" alt="Travel & Tourism">
+                        <h3>Time Management</h3>
+                        <p>₹250</p>
+                        <button onclick="addToCart('Time Management')">Add to Cart</button>
+                    </div>
+                    
+                    <div class="book" data-category="t&t">
+                        <img src="img/tt5.jpg" alt="Travel & Tourism">
+                        <h3>The New Tourist</h3>
+                        <p>₹350</p>
+                        <button onclick="addToCart('The New Tourist')">Add to Cart</button>
+                    </div>
+                    <div class="book" data-category="ts">
+                        <img src="img/ts1.jpeg" alt="Textbooks & Study Guides">
+                        <h3>UPSC</h3>
+                        <p>₹999</p>
+                        <button onclick="addToCart('UPSC')">Add to Cart</button>
+                    </div>
+                    
+                    <div class="book" data-category="ts">
+                        <img src="img/ts2.jpeg" alt="Textbooks & Study Guides">
+                        <h3>English Language</h3>
+                        <p>₹765</p>
+                        <button onclick="addToCart('English Language')">Add to Cart</button>
+                    </div>
+                    
+                    <div class="book" data-category="ts">
+                        <img src="img/ts3.jpeg" alt="Textbooks & Study Guides">
+                        <h3>SAT Guide</h3>
+                        <p>₹599</p>
+                        <button onclick="addToCart('SAT Guide')">Add to Cart</button>
+                    </div>
+                    
+                    <div class="book" data-category="ts">
+                        <img src="img/ts4.jpeg" alt="Textbooks & Study Guides">
+                        <h3>English Core</h3>
+                        <p>₹500</p>
+                        <button onclick="addToCart('English Core')">Add to Cart</button>
+                    </div>
+                    
+                    <div class="book" data-category="ts">
+                        <img src="img/ts5.jpeg" alt="Textbooks & Study Guides">
+                        <h3>Plant Physiology</h3>
+                        <p>₹599</p>
+                        <button onclick="addToCart('Plant Physiology')">Add to Cart</button>
+                    </div>
+                    
+                                    
+                </div>
+
+            </section>
+        </section>
+
+        <section id="orders" class="orders" style="display: none;">
+            <h2>All Orders</h2>
+            <div id="order-items"></div>
+        </section>
+    </main>
+
+   
+    <footer>
+        <section id="contact-section" class="contact">
+            <h2>Contact Us</h2>
+            <div class="container">
+                <p>Email: contact@bookstore.com</p>
+                <p>Phone: +91 1234567890</p>
+                <p>Address: 123 Nehru St, Delhi City, 56789</p>
+            </div>
+        </section>
+        <div class="container">
+            <p>&copy; 2024 Book Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <section class="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <p id="total-price">Total: ₹0.00</p>
+        <button onclick="placeOrder()">Place Order</button>
+    </section>
+
+    <script src="script1.js"></script>
+</body>
+</html>
+
+
+
+
